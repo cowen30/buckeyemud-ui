@@ -10,6 +10,10 @@
     "e2e": "ng e2e",
     "timestamp": "tsc timestamp.ts && node timestamp.js"
   },
+  "engines": {
+    "node": "12.14.1",
+    "npm": "6.14.5"
+  },
   "private": true,
   "dependencies": {
     "@angular/animations": "~9.1.9",
@@ -35,6 +39,7 @@
     "sequelize": "^5.21.11",
     "sequelize-typescript": "^1.1.0",
     "tslib": "^1.10.0",
+    "typescript": "~3.8.3",
     "winston": "^3.2.1",
     "zone.js": "~0.10.2"
   },
