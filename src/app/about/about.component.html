@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-12 secondary-title">
+      <h1>About Us</h1>
+    </div>
+  </div>
+  <div class="row pt-3">
+    <div class="col-12 col-md-6">
+      <h2>Our Mission</h2>
+      <p>The Buckeye Mudder Club will strive to enhance the mental and physical toughness of Buckeyes through the completion of obstacle courses while also promoting camaraderie, athleticism, and teamwork.</p>
+    </div>
+    <div class="col-12 col-md-6">
+      <h2>Our Goals</h2>
+      <ol>
+        <li>Travel to an international Tough Mudder event</li>
+        <li>Participate in other OCR brand events</li>
+        <li>Have 70 active members in the club</li>
+      </ol>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-12">
+      <h2>Executive Board</h2>
+      <div class="row">
+        <div class="col-12 col-md-6" *ngFor="let officer of officers">
+          <div class="row" style="padding:15px 0;">
+            <div class="col-12 col-md-5">
+              <h3 style="text-align:center;">{{ officer.title }}</h3>
+              <img src="https://drive.google.com/thumbnail?id={{ officer.image_id }}&sz=w500" alt="{{ officer.first_name }} {{ officer.last_name }}" class="mx-auto" style="max-width:100%;display:block;border-radius:100%;" />
+            </div>
+            <div class="col-12 col-md-7">
+              <img src="https://drive.google.com/thumbnail?id={{ true }}&sz=w500" class="d-none d-md-block" style="display:inline-block;height:45px;vertical-align:text-bottom;"/>
+              <h4>{{ officer.first_name }} {{ officer.last_name }}</h4>
+              <ng-template [ngIf]="officer.officer_id != 10">
+                <p><strong>Year</strong>: {{ officer.year }}</p>
+                <p><strong>Major</strong>: {{ officer.major }}</p>
+                <p><strong>Hometown</strong>: {{ officer.hometown }}</p>
+                <p><strong>Tough Mudders Completed</strong>: {{ officer.raceString }}</p>
+              </ng-template>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

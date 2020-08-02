@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import './variables';
+
+.secondary-title {
+  margin-right: auto;
+  margin-left: auto;
+  font-weight: bold;
+  text-align: center;
+  background-color: var(--base-color);
+  color: #ffffff;
+  opacity: 0.9;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.card {
+  a {
+    color: #000000;
+    text-align: center;
+  }
+  &:hover {
+    cursor: pointer;
+    a {
+      color: var(--base-color);
+      text-decoration: none;
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .main .container-fluid {
+    max-width: 85%!important;
+  }
+
+  .navbar-nav > li {
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,21 @@
+@import '../../variables.scss';
+
+.jumbotron {
+  background-color: var(--base-color);
+  font-family: 'Shift', sans-serif;
+  font-weight: bold;
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+#homepage-links .card:hover {
+  background-color: #bbbbbb;
+}
+
+.card-img-bottom {
+  font-size: 10em;
+  max-width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}

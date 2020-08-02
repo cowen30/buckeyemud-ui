@@ -1,0 +1,8 @@
+@import '../../variables';
+
+.social-img {
+  margin: 29px;
+  &:hover svg {
+    fill: var(--base-color);
+  }
+}
